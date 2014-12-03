@@ -1,11 +1,10 @@
 {
-  "name": "AkihikoITOH.github.io",
+  "name": "AkihikoITOH",
   "version": "0.0.0",
   "homepage": "http://akihiko.me/",
   "authors": [
     "Akihiko Itoh"
   ],
-  "description": "index",
   "main": "index.html",
   "license": "MIT",
   "private": true,
@@ -17,18 +16,6 @@
     "tests"
   ],
   "dependencies": {
-    "context-free-parser": "Polymer/context-free-parser#>=0.3.0 <1.0.0",
-    "core-ajax": "Polymer/core-ajax#>=0.3.0 <1.0.0",
-    "core-collapse": "Polymer/core-collapse#>=0.3.0 <1.0.0",
-    "core-doc-viewer": "Polymer/core-doc-viewer#>=0.3.0 <1.0.0",
-    "core-docs": "Polymer/core-docs#>=0.3.0 <1.0.0",
-    "core-drag-drop": "Polymer/core-drag-drop#>=0.3.0 <1.0.0",
-    "core-drawer-panel": "Polymer/core-drawer-panel#>=0.3.0 <1.0.0",
-    "core-elements": "Polymer/core-elements#~0.3.3",
-    "font-roboto": "Polymer/font-roboto#>=0.3.0 <1.0.0",
-    "paper-button": "Polymer/paper-button#>=0.3.0 <1.0.0",
-    "paper-checkbox": "Polymer/paper-checkbox#>=0.3.0 <1.0.0",
-    "paper-dialog": "Polymer/paper-dialog#>=0.3.0 <1.0.0",
-    "paper-elements": "Polymer/paper-elements#~0.3.3"
+    "polymer": "Polymer/polymer#~0.5.1"
   }
 }
