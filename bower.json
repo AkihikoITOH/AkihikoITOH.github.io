@@ -1,0 +1,19 @@
+{
+  "name": "polymer-tutorial-using-bower",
+  "version": "0.0.0",
+  "homepage": "https://github.com/hnakamur/polymer-tutorial-using-bower",
+  "authors": [
+    "Hiroaki Nakamura <hnakamur@gmail.com>"
+  ],
+  "description": "modified Polymer tutorial using bower",
+  "main": "index.html",
+  "keywords": [
+    "Polymer"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.3.3",
+    "core-elements": "Polymer/core-elements#~0.3.3",
+    "paper-elements": "Polymer/paper-elements#~0.3.3"
+  }
+}
