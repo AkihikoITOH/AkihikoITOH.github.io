@@ -16,6 +16,7 @@
         <link rel="import" href="/bower_components/paper-slider/paper-slider.html">
         <link rel="import" href="/bower_components/paper-progress/paper-progress.html">
         <link rel="import" href="/bower_components/paper-input/paper-input.html">
+        <link rel="import" href="/post-card.html">
         <style type="text/css">
 body {
     font-family: sans-serif;
@@ -41,14 +42,15 @@ body {
     <body fullbleed unresolved>
         <core-header-panel>
         <core-toolbar class="medium-tall">
-        <paper-icon-button id="navicon" icon="arrow-back"></paper-icon-button>
-        <span flex>Title</span>
-        <paper-icon-button id="searchbutton" icon="search"></paper-icon-button>
-        <paper-tabs class="bottom fit">
-        <paper-tab>ONE</paper-tab>
-        <paper-tab>TWO</paper-tab>
-        </paper-tabs>
+            <paper-icon-button id="navicon" icon="arrow-back"></paper-icon-button>
+            <span flex>Title</span>
+            <paper-icon-button id="searchbutton" icon="search"></paper-icon-button>
+            <paper-tabs class="bottom fit">
+                <paper-tab>ONE</paper-tab>
+                <paper-tab>TWO</paper-tab>
+            </paper-tabs>
         </core-toolbar>
+
         <p><paper-button label="flat button">Button</paper-button></p>
         <p><paper-button label="raised button" raisedButton>Button</paper-button></p>
         <p><paper-checkbox></paper-checkbox></p>
@@ -65,6 +67,13 @@ body {
         <p><paper-slider min="10" max="200" value="110"></paper-slider></p>
         <p><paper-progress value="10"></paper-progress></p>
         <p><paper-input label="Your Name"></paper-input></p>
+        <div class="container" layout vertical center>
+            <post-card>
+                <img width="70" height="70" src="/images/avatar-07.svg">
+                <h2>Another Developer</h2>
+                <p>I'm composing with shadow DOM!</p>
+            </post-card>
+        </div>
         </core-header-panel>
     </body>
 
