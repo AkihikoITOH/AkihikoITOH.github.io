@@ -1,79 +1,213 @@
-<!DOCTYPE html>
 <html>
+<head>
+    <style>
+        $baseFontSize: 16;
 
-    <head>
-        <meta charaset="utf-8" />
-        <script src="/bower_components/webcomponentsjs/webcomponents.min.js"></script>
-        <link rel="import" href="/bower_components/core-toolbar/core-toolbar.html">
-        <link rel="import" href="/bower_components/core-header-panel/core-header-panel.html">
-        <link rel="import" href="/bower_components/core-icons/core-icons.html">
-        <link rel="import" href="/bower_components/paper-tabs/paper-tabs.html">
-        <link rel="import" href="/bower_components/paper-icon-button/paper-icon-button.html">
-        <link rel="import" href="/bower_components/paper-checkbox/paper-checkbox.html">
-        <link rel="import" href="/bower_components/paper-toggle-button/paper-toggle-button.html">
-        <link rel="import" href="/bower_components/paper-radio-group/paper-radio-group.html">
-        <link rel="import" href="/bower_components/paper-fab/paper-fab.html">
-        <link rel="import" href="/bower_components/paper-slider/paper-slider.html">
-        <link rel="import" href="/bower_components/paper-progress/paper-progress.html">
-        <link rel="import" href="/bower_components/paper-input/paper-input.html">
-        <link rel="import" href="/post-card.html">
-        <style type="text/css">
-body {
-    font-family: sans-serif;
-}
-    core-header-panel {
-        background: white;
-        /* height: 100% fails here on some browsers */
-        height: 100vh;
-        width: 100vw;
-    }
-    core-toolbar {
-        background-color: #00bfff;
-        color: #fff;
-        fill: #fff;
-    }
-    p {
-        margin: 10px;
-        padding: 10px 10px;
-    }
-        </style>
-    </head>
+        $green: #009688;
+        $blue: #5677fc;
+        $blueDark: #3b50ce;
 
-    <body fullbleed unresolved>
-        <core-header-panel>
-        <core-toolbar class="medium-tall">
-            <paper-icon-button id="navicon" icon="arrow-back"></paper-icon-button>
-            <span flex>Title</span>
-            <paper-icon-button id="searchbutton" icon="search"></paper-icon-button>
-            <paper-tabs class="bottom fit">
-                <paper-tab>ONE</paper-tab>
-                <paper-tab>TWO</paper-tab>
-            </paper-tabs>
-        </core-toolbar>
+        $slideDistance: 100;
+        $slideDuration: .4s;
 
-        <p><paper-button label="flat button">Button</paper-button></p>
-        <p><paper-button label="raised button" raisedButton>Button</paper-button></p>
-        <p><paper-checkbox></paper-checkbox></p>
-        <p><paper-checkbox checked></paper-checkbox></p>
-        <p><paper-toggle-button></paper-toggle-button></p>
-        <p>
-        <paper-radio-group selected="small">
-        <paper-radio-button name="small" label="Small"></paper-radio-button>
-        <paper-radio-button name="medium" label="Medium"></paper-radio-button>
-        <paper-radio-button name="large" label="Large"></paper-radio-button>
-        </paper-radio-group>
-        </p>
-        <p><paper-fab icon="favorite"></paper-fab></p>
-        <p><paper-slider min="10" max="200" value="110"></paper-slider></p>
-        <p><paper-progress value="10"></paper-progress></p>
-        <p><paper-input label="Your Name"></paper-input></p>
-        <p>
-            <post-card>
-                <img width="70" height="70" src="/images/avatar-07.svg">
-                <h2>Another Developer</h2>
-            </post-card>
-        </p>
-        </core-header-panel>
-    </body>
+        @function rem($val) {
+            @return #{$val / $baseFontSize}rem;
+        }
 
+        body {
+            font-size: #{$baseFontSize}px;
+        }
+
+        .header {
+            height: 8rem;
+
+            background:  $green;
+        }
+
+        .content {
+            @extend %slide-up;
+
+            width: 20rem;
+            margin: -4rem auto 0 auto;
+            padding: 1rem;
+
+            background: #fff;
+
+            border-radius: rem(2);
+            box-shadow: 0 rem(2) rem(5) 0 rgba(0, 0, 0, 0.25);
+        }
+
+        .list {
+            margin: .5rem;  
+        }
+
+        .list__item {
+            margin: 0 0 .5rem 0;
+            padding: 0;
+        }
+
+        .label--checkbox {
+            position: relative;
+
+            margin: .5rem;
+
+            font-family: Arial, sans-serif;
+            line-height: 135%;
+
+            cursor: pointer;
+        }
+
+          .checkbox {
+              position: relative;
+              top: rem(-6);
+
+              margin: 0 1rem 0 0 ;
+
+              cursor: pointer;
+
+                  &:before {
+                      @include transition(all .3s ease-in-out);
+
+                      content: "";
+
+                      position: absolute;
+                      left: 0;
+                      z-index: 1;
+
+                      width: 1rem;
+                      height: 1rem;
+
+                      border: 2px solid #f2f2f2; 
+                  }
+
+                  &:checked {
+                      &:before {
+                          @include transform(rotate(-45deg));
+
+                          height: .5rem;
+
+                          border-color: $green;
+                          border-top-style: none;
+                          border-right-style: none;
+                      } 
+                  }
+
+                  &:after {
+                      content: "";
+
+                      position: absolute;
+                      top: rem(-2);
+                      left: 0;
+
+                      width: 1.1rem;
+                      height: 1.1rem;
+
+                      background: #fff;
+
+                      cursor: pointer;
+                  }
+          }
+
+          .button--round { 
+              @include transition(.3s background ease-in-out);
+
+              width: 2rem;
+              height: 2rem;
+
+              background: $blue;
+
+              border-radius: 50%;
+              box-shadow: 0 rem(2) rem(5) 0 rgba(0, 0, 0, 0.25);
+
+              color: #fff;
+              text-decoration: none;
+              text-align: center;
+
+                  i {
+                      font-size: 1rem;
+                      line-height: 220%;
+                      vertical-align: middle;
+                  }
+
+                  &:hover {
+                      background: $blueDark;
+                  }
+          }
+
+          .button--sticky {
+              position: fixed;
+              right: 2rem;
+              top: 16rem;
+          }
+
+          %slide-up {
+              -webkit-animation-duration: $slideDuration;
+              animation-duration: $slideDuration;
+              -webkit-animation-fill-mode: both;
+              animation-fill-mode: both;
+              -webkit-animation-name: slideUp;
+              animation-name: slideUp;
+              -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+              animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          }
+
+          @-webkit-keyframes slideUp {
+              0% {
+                  -webkit-transform: translateY(rem($slideDistance));
+                  transform: translateY(rem($slideDistance));
+              }
+
+              100% {
+                  -webkit-transform: translateY(0);
+                  transform: translateY(0);
+              }
+          }
+
+          @keyframes slideUp {
+              0% {
+                  -webkit-transform: translateY(rem($slideDistance));
+                  transform: translateY(rem($slideDistance));
+              }
+
+              100% {
+                  -webkit-transform: translateY(0);
+                  transform: translateY(0);
+              }
+          }
+    </style>
+</head>
+<body>
+    <header class="header">
+
+    </header>
+
+    <section class="content">
+        <ul class="list">
+            <li class="list__item">
+                <label class="label--checkbox">
+                    <input type="checkbox" class="checkbox" checked>
+                    Item 1
+                </label>
+            </li>
+            <li class="list__item">
+                <label class="label--checkbox">
+                    <input type="checkbox" class="checkbox">
+                    Item 2
+                </label>
+            </li>
+            <li class="list__item">
+                <label class="label--checkbox">
+                    <input type="checkbox" class="checkbox">
+                    Item 3
+                </label>
+            </li>
+            <li class="list__item">
+                <label class="label--checkbox">
+                    <input type="checkbox" class="checkbox">
+                    Item 4
+                </label>
+            </li>
+        </ul>
+    </section>
+</body>
 </html>
