@@ -1,213 +1,70 @@
+<!doctype html>
 <html>
-<head>
-</head>
-<body>
-    <style>
-        $baseFontSize: 16;
 
-        $green: #009688;
-        $blue: #5677fc;
-        $blueDark: #3b50ce;
+    <head>
 
-        $slideDistance: 100;
-        $slideDuration: .4s;
+        <title>unquote</title>
 
-        @function rem($val) {
-            @return #{$val / $baseFontSize}rem;
-        }
+        <meta name="viewport"
+              content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
 
-        body {
-            font-size: #{$baseFontSize}px;
-        }
+        <script src="./bower_components/webcomponentsjs/webcomponents.js">
+        </script>
 
-        .header {
-            height: 8rem;
+        <link rel="import"
+              href="./bower_components/font-roboto/roboto.html">
+        <link rel="import"
+              href="./bower_components/core-header-panel/core-header-panel.html">
+        <link rel="import"
+              href="./bower_components/core-toolbar/core-toolbar.html">
+        <link rel="import"
+              href="./bower_components/paper-tabs/paper-tabs.html">
+        <style>
+html,body {
+    height: 100%;
+    margin: 0;
+    background-color: #E5E5E5;
+    font-family: 'RobotoDraft', sans-serif;
+}
+core-header-panel {
+    height: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+core-toolbar {
+    background: #03a9f4;
+    color: white;
+}
+#tabs {
+    width: 100%;
+    margin: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-transform: uppercase;
+}
+        </style>
+        <body unresolved>
+            <core-header-panel>
 
-            background:  $green;
-        }
+            <core-toolbar>
+            <paper-tabs id="tabs" selected="all" self-end>
+            <paper-tab name="all">All</paper-tab>
+            <paper-tab name="favorites">Favorites</paper-tab>
+            </paper-tabs>
+            </core-toolbar>
 
-        .content {
-            @extend %slide-up;
+            <!-- main page content will go here -->
 
-            width: 20rem;
-            margin: -4rem auto 0 auto;
-            padding: 1rem;
+            </core-header-panel>
+            <script>
+var tabs = document.querySelector('paper-tabs');
 
-            background: #fff;
+tabs.addEventListener('core-select', function() {
+    console.log("Selected: " + tabs.selected);
+});
+            </script>
+        </body>
 
-            border-radius: rem(2);
-            box-shadow: 0 rem(2) rem(5) 0 rgba(0, 0, 0, 0.25);
-        }
-
-        .list {
-            margin: .5rem;  
-        }
-
-        .list__item {
-            margin: 0 0 .5rem 0;
-            padding: 0;
-        }
-
-        .label--checkbox {
-            position: relative;
-
-            margin: .5rem;
-
-            font-family: Arial, sans-serif;
-            line-height: 135%;
-
-            cursor: pointer;
-        }
-
-          .checkbox {
-              position: relative;
-              top: rem(-6);
-
-              margin: 0 1rem 0 0 ;
-
-              cursor: pointer;
-
-                  &:before {
-                      @include transition(all .3s ease-in-out);
-
-                      content: "";
-
-                      position: absolute;
-                      left: 0;
-                      z-index: 1;
-
-                      width: 1rem;
-                      height: 1rem;
-
-                      border: 2px solid #f2f2f2; 
-                  }
-
-                  &:checked {
-                      &:before {
-                          @include transform(rotate(-45deg));
-
-                          height: .5rem;
-
-                          border-color: $green;
-                          border-top-style: none;
-                          border-right-style: none;
-                      } 
-                  }
-
-                  &:after {
-                      content: "";
-
-                      position: absolute;
-                      top: rem(-2);
-                      left: 0;
-
-                      width: 1.1rem;
-                      height: 1.1rem;
-
-                      background: #fff;
-
-                      cursor: pointer;
-                  }
-          }
-
-          .button--round { 
-              @include transition(.3s background ease-in-out);
-
-              width: 2rem;
-              height: 2rem;
-
-              background: $blue;
-
-              border-radius: 50%;
-              box-shadow: 0 rem(2) rem(5) 0 rgba(0, 0, 0, 0.25);
-
-              color: #fff;
-              text-decoration: none;
-              text-align: center;
-
-                  i {
-                      font-size: 1rem;
-                      line-height: 220%;
-                      vertical-align: middle;
-                  }
-
-                  &:hover {
-                      background: $blueDark;
-                  }
-          }
-
-          .button--sticky {
-              position: fixed;
-              right: 2rem;
-              top: 16rem;
-          }
-
-          %slide-up {
-              -webkit-animation-duration: $slideDuration;
-              animation-duration: $slideDuration;
-              -webkit-animation-fill-mode: both;
-              animation-fill-mode: both;
-              -webkit-animation-name: slideUp;
-              animation-name: slideUp;
-              -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-              animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          }
-
-          @-webkit-keyframes slideUp {
-              0% {
-                  -webkit-transform: translateY(rem($slideDistance));
-                  transform: translateY(rem($slideDistance));
-              }
-
-              100% {
-                  -webkit-transform: translateY(0);
-                  transform: translateY(0);
-              }
-          }
-
-          @keyframes slideUp {
-              0% {
-                  -webkit-transform: translateY(rem($slideDistance));
-                  transform: translateY(rem($slideDistance));
-              }
-
-              100% {
-                  -webkit-transform: translateY(0);
-                  transform: translateY(0);
-              }
-          }
-    </style>
-    <header class="header">
-
-    </header>
-
-    <section class="content">
-        <ul class="list">
-            <li class="list__item">
-                <label class="label--checkbox">
-                    <input type="checkbox" class="checkbox" checked>
-                    Item 1
-                </label>
-            </li>
-            <li class="list__item">
-                <label class="label--checkbox">
-                    <input type="checkbox" class="checkbox">
-                    Item 2
-                </label>
-            </li>
-            <li class="list__item">
-                <label class="label--checkbox">
-                    <input type="checkbox" class="checkbox">
-                    Item 3
-                </label>
-            </li>
-            <li class="list__item">
-                <label class="label--checkbox">
-                    <input type="checkbox" class="checkbox">
-                    Item 4
-                </label>
-            </li>
-        </ul>
-    </section>
-</body>
 </html>

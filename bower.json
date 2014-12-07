@@ -1,22 +1,25 @@
 {
-  "name": "AkihikoITOH",
+  "name": "akihiko.me",
   "version": "0.0.0",
-  "homepage": "http://akihiko.me/",
+  "homepage": "Akihiko.me",
   "authors": [
-    "Akihiko Itoh"
+    "AkihikoITOH"
   ],
-  "main": "index.html",
   "license": "MIT",
   "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
+    "bower_components",
     "test",
     "tests"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#~0.5.1",
+    "core-ajax": "Polymer/core-ajax#~0.5.1",
     "core-elements": "Polymer/core-elements#~0.5.1",
-    "paper-elements": "Polymer/paper-elements#~0.5.1"
+    "custom-card": "*",
+    "paper-elements": "Polymer/paper-elements#~0.5.1",
+    "polymer-platform": "~0.4.2",
+    "polymer": "Polymer/polymer#~0.5.1"
   }
 }
