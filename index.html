@@ -23,48 +23,55 @@
         <link rel="import" href="./bower_components/paper-button/paper-button.html">
         <link rel="import" href="./bower_components/paper-icon-button/paper-icon-button.html">
         <style>
-html,body {
-    height: 100%;
-    margin: 0;
-    background-color: #E5E5E5;
-    font-family: 'RobotoDraft', sans-serif;
-}
+            html,body {
+                height: 100%;
+                margin: 0;
+                background-color: #E5E5E5;
+                font-family: 'RobotoDraft', sans-serif;
+            }
 
-        core-toolbar {
-            color: #f1f1f1;
-            fill: #f1f1f1;
-        }
-        core-header-panel {
-            height: 100%;
-            overflow: auto;
-            -webkit-overflow-scrolling: touch;
-        }
-        core-toolbar {
-            background: black;
-            color: white;
-        }
-        section {
-            padding: 20px 0;
-            width: 60%;
-        }
+            core-toolbar {
+                color: #f1f1f1;
+                fill: #f1f1f1;
+            }
+            core-header-panel {
+                height: 100%;
+                overflow: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+            core-toolbar {
+                background: black;
+                color: white;
+            }
+            section {
+                padding: 20px 0;
+                width: 60%;
+            }
 
-        section > div {
-            padding: 14px;
-            font-size: 16px;
-        }
+            section > div {
+                padding: 14px;
+                font-size: 16px;
+            }
 
-        paper-button {
-            width: 20%;
-        }
+            paper-button {
+                width: 8%;
+            }
+            paper-button.services {
+                width: 4%;
+                height: 80%;
+            }
+            paper-button.products {
+                width: 20%;
+            }
 
-        paper-button.colored {
-            color: #4285f4;
-        }
+            paper-button.colored {
+                color: #4285f4;
+            }
 
-        paper-button[raised].colored {
-            background: #4285f4;
-            color: #fff;
-        }
+            paper-button[raised].colored {
+                background: #4285f4;
+                color: #fff;
+            }
 
         </style>
         <body unresolved>
@@ -76,15 +83,21 @@ html,body {
             <!-- main page content will go here -->
             <div class="container" layout vertical center align="center">
                 <section>
-                    <a href="http://blog.akihiko.me/"><paper-button raised><paper-icon-button src="./img/Ghost_icon.png" aria-label="blog" title="blog"></paper-icon-button>Blog</paper-button></a>
-                    <a href="https://github.com/AkihikoITOH"><paper-button raised><paper-icon-button src="./img/Octocat.png" aria-label="octocat" title="octocat"></paper-icon-button>Github</paper-button></a>
-                    <a href="https://www.facebook.com/itoh.akihiko.5"><paper-button raised><paper-icon-button src="./img/FB-fLogo-Blue-broadcast.png" aria-label="facebook" title="facebook"></paper-icon-button>Facebook</paper-button></a>
-                    <a href="https://twitter.com/thomas_aki"><paper-button raised><paper-icon-button src="./img/Twitter_logo_blue.png" aria-label="twitter" title="twitter"></paper-icon-button>Twitter</paper-button></a>
+                    <a href="http://blog.akihiko.me/"><paper-button raised class="services"><paper-icon-button src="./img/Ghost_icon.png" aria-label="blog" title="blog"></paper-icon-button></paper-button></a>
+                </section>
+                <section>
+                    <a href="https://github.com/AkihikoITOH"><paper-button raised class="services"><paper-icon-button src="./img/Octocat.png" aria-label="octocat" title="octocat"></paper-icon-button></paper-button></a>
+                </section>
+                <section>
+                    <a href="https://www.facebook.com/itoh.akihiko.5"><paper-button raised class="services"><paper-icon-button src="./img/FB-fLogo-Blue-broadcast.png" aria-label="facebook" title="facebook"></paper-icon-button></paper-button></a>
+                </section>
+                <section>
+                    <a href="https://twitter.com/thomas_aki"><paper-button raised class="services"><paper-icon-button src="./img/Twitter_logo_blue.png" aria-label="twitter" title="twitter"></paper-icon-button></paper-button></a>
                 </section>
                 <br/>
                 <span>Products</span>
                 <section>
-                    <paper-button raised>Coming soon...</paper-button>
+                    <paper-button raised class="products">Coming soon...</paper-button>
                 </section>
             </div>
 
