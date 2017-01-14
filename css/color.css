@@ -1,0 +1,37 @@
+.tag {
+    /* background-color: #F5EBCC; */
+    background-color: #EAEAE7;
+}
+
+span, a:link, a:visited, a:active {
+    color: black;
+}
+
+.yaml_doc_sep {
+    color: turquoise;
+}
+
+.yaml_comment {
+    color: blue;
+}
+
+.yaml_comment > a {
+    color: blue;
+}
+
+.yaml_directive {
+    color: red;
+}
+
+.yaml_key {
+    color: green;
+}
+
+.yaml_key_sep {
+    color: brown;
+}
+
+.breadcrumb > li + li:before {
+    content: "/ ";
+    padding: 1 1px;
+}

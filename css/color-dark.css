@@ -1,0 +1,46 @@
+body{
+    background-color: #002B36;
+    color: #2AA198;
+}
+
+span, a:link, a:visited, a:active {
+    color: #2AA198;
+}
+
+.yaml_doc_sep {
+    color: #2AA198;
+}
+
+.yaml_comment {
+    color: #586E75;
+}
+
+.yaml_comment > a {
+    color: #586E75;
+}
+
+.yaml_directive {
+    color: #839496;
+}
+
+.yaml_key {
+    color: #268BD2;
+}
+
+.yaml_key_sep {
+    color: #DC322F;
+}
+
+.breadcrumb {
+    background-color: #073642;
+}
+
+.breadcrumb > li + li:before {
+    color: #839496;
+    content: "/ ";
+    padding: 1 1px;
+}
+
+.breadcrumb > li > a {
+    color: #839496;
+}
