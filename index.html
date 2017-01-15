@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script type="text/javascript">
-    var host = "akihiko.eu";
-    if ((host == window.location.host) && (window.location.protocol != "https:"))
-        window.location.protocol = "https";
-  </script>
   <title>AKIHIKO.EU</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=0.7, minimum-scale=0.1, maximum-scale=3.0, user-scalable=yes">
@@ -145,7 +140,7 @@
   var delta = new Date((+new Date()) - (+new Date("1991-03-07")));
   var yeardelta = delta.getUTCFullYear() - 1970;
   var monthdelta = delta.getUTCMonth();
-  var version = "v" + yeardelta + "." + monthdelta;
+  var version = "v0." + yeardelta + "." + monthdelta;
 
   $("#str_version").append(version);
   </script>
