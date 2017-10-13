@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/akihikoitoh
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://akihiko.eu
+  * I am akihikoitoh (https://keybase.io/akihikoitoh) on keybase.
+  * I have a public key ASBUpJQyEXaO71yEv3Ol4bNPNQR2SI1NVMfTRaF_BYadcAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120e6420fd7a0766841bcbf1dee58c2f9e9f17e8fea0a78a9a7d665bee93734db840a",
+      "host": "keybase.io",
+      "kid": "012054a4943211768eef5c84bf73a5e1b34f350476488d4d54c7d345a17f05869d700a",
+      "uid": "c80e79a039c0468eef36c8ccb1be9719",
+      "username": "akihikoitoh"
+    },
+    "merkle_root": {
+      "ctime": 1507935547,
+      "hash": "5b17da15cc9b39b37012e3632300b856a3d0902d3f6a975bcb3687f0d6d4cbdaf6a077cc1fb340b55057846c475a7090a46b5c5b58691d4557c603198e3de4e0",
+      "hash_meta": "85bc719fcc9212bd3b39cac9ace92852637ef58d66b19050cead82f374184415",
+      "seqno": 1575805
+    },
+    "service": {
+      "hostname": "akihiko.eu",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.33"
+  },
+  "ctime": 1507935572,
+  "expire_in": 504576000,
+  "prev": "36cc2c2b8224a83f569f0ce11fd8fbd00fecea0d8ff40c3cf1672069c5401039",
+  "seqno": 17,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgVKSUMhF2ju9chL9zpeGzTzUEdkiNTVTH00WhfwWGnXAKp3BheWxvYWTFA0V7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwZTY0MjBmZDdhMDc2Njg0MWJjYmYxZGVlNThjMmY5ZTlmMTdlOGZlYTBhNzhhOWE3ZDY2NWJlZTkzNzM0ZGI4NDBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwNTRhNDk0MzIxMTc2OGVlZjVjODRiZjczYTVlMWIzNGYzNTA0NzY0ODhkNGQ1NGM3ZDM0NWExN2YwNTg2OWQ3MDBhIiwidWlkIjoiYzgwZTc5YTAzOWMwNDY4ZWVmMzZjOGNjYjFiZTk3MTkiLCJ1c2VybmFtZSI6ImFraWhpa29pdG9oIn0sIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNTA3OTM1NTQ3LCJoYXNoIjoiNWIxN2RhMTVjYzliMzliMzcwMTJlMzYzMjMwMGI4NTZhM2QwOTAyZDNmNmE5NzViY2IzNjg3ZjBkNmQ0Y2JkYWY2YTA3N2NjMWZiMzQwYjU1MDU3ODQ2YzQ3NWE3MDkwYTQ2YjVjNWI1ODY5MWQ0NTU3YzYwMzE5OGUzZGU0ZTAiLCJoYXNoX21ldGEiOiI4NWJjNzE5ZmNjOTIxMmJkM2IzOWNhYzlhY2U5Mjg1MjYzN2VmNThkNjZiMTkwNTBjZWFkODJmMzc0MTg0NDE1Iiwic2Vxbm8iOjE1NzU4MDV9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoiYWtpaGlrby5ldSIsInByb3RvY29sIjoiaHR0cDoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuMzMifSwiY3RpbWUiOjE1MDc5MzU1NzIsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJwcmV2IjoiMzZjYzJjMmI4MjI0YTgzZjU2OWYwY2UxMWZkOGZiZDAwZmVjZWEwZDhmZjQwYzNjZjE2NzIwNjljNTQwMTAzOSIsInNlcW5vIjoxNywidGFnIjoic2lnbmF0dXJlIn2jc2lnxEC/0VrQxNISAoEI3iPptUj47UkADhfnWImFpNew6a20DwJH909FAwRHWhJBDkC6CEahe0bFgjDbZ0z81ItScDcBqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQghxRAKv1mh0clUDkTjOlI6eltLEAFbwF7Ci4NEvu/zz6jdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/akihikoitoh
+
+================================================================== 
