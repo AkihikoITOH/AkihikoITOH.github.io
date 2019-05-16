@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: akihiko.eu 
+Token: 19b52288627e4df49734d012b43f59b602e1bc0067c9eeb4adae0420fd93eb57 
