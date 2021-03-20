@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/akihikoitoh
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://akihiko.eu
+  * I am akihikoitoh (https://keybase.io/akihikoitoh) on keybase.
+  * I have a public key ASBUpJQyEXaO71yEv3Ol4bNPNQR2SI1NVMfTRaF_BYadcAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120e6420fd7a0766841bcbf1dee58c2f9e9f17e8fea0a78a9a7d665bee93734db840a",
+      "host": "keybase.io",
+      "kid": "012054a4943211768eef5c84bf73a5e1b34f350476488d4d54c7d345a17f05869d700a",
+      "uid": "c80e79a039c0468eef36c8ccb1be9719",
+      "username": "akihikoitoh"
+    },
+    "merkle_root": {
+      "ctime": 1540511980,
+      "hash": "32934163e0a4db90760cd54ba3ff765ef30c7733cc518c7d1671c88a1e487375ede01b03391e738d7fa764535755dc4c8d1aca9c26c21bb8c4bd73fd2ec9b492",
+      "hash_meta": "451a78b04e13d546de6593cbc3070752b64dfb6a7a21a2a25b7c0177d2095cd0",
+      "seqno": 3851977
+    },
+    "service": {
+      "entropy": "sFYWAKHzzBsPy4atzW432gfr",
+      "hostname": "akihiko.eu",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.8.0"
+  },
+  "ctime": 1540511989,
+  "expire_in": 504576000,
+  "prev": "e4d239e4eadcbbef0a7dcc110e53c085533712f52252a4903b2ef7b29fabaeea",
+  "seqno": 28,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgVKSUMhF2ju9chL9zpeGzTzUEdkiNTVTH00WhfwWGnXAKp3BheWxvYWTESpcCHMQg5NI55Orcu+8KfcwRDlPAhVM3EvUiUqSQOy73sp+rrurEIEMXxChXtyW5FQIsLvS3rWgvLsOZMbmpmDXLkXiSxDm3AgHCo3NpZ8RAdpKESyXfupzd6Tm4g5aR0hdUkbgRXlH47DDUqpgxM/Ui4zFYcrBSXg4+vhz0GFOnZPN0xJbeheyzMzfpsdm3BKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIOfNUFCptPSUtJa/SksAB5RlhZUmZDMhQKwxOOgT2Ox4o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/akihikoitoh
+
+==================================================================
